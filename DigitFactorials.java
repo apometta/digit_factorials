@@ -9,9 +9,13 @@ public class DigitFactorials {
 
     public static void main(String[] args) {
         Factorials facts = new Factorials();
+        System.out.println ("facts created");
         int sum = 0;
         for (int i = 10; i < MAX; ++i){
-            if (facts.digit_check(i)) sum += i;
+            if (facts.digit_check(i)){
+                System.out.println ("Digit factorial found: " + i);
+                sum += i;
+            }
         }
         System.out.println("Sum: " + sum);
     }
