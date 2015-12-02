@@ -1,0 +1,22 @@
+This small program, written by Andrew H. Pometta, is designed to solve project 
+Euler question number 34, digit factorials: https://projecteuler.net/problem=34.
+
+***
+
+145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.
+
+Find the sum of all numbers which are equal to the sum of the factorial of their
+digits.
+
+Note: as 1! = 1 and 2! = 2 are not sums they are not included.
+
+***
+
+Some mathematical notes: 9! is 362,880.  You will notice that 9! * 8 = 2,903,040.
+This is strictly less than 10,000,000, the smallest 8 digit number.  9! * 7 = 
+2540610.  This would be the largest possible value we can get with seven 9!s, and 
+anything higher than this is known to be impossible to achieve with the digit 
+factorial sum.  That is why our max is 2,540,160.  As well, due to the note in the 
+problem, we do not include anything below 10.  Thus our range is 10 to 2540610.
+
+See the implementation file for implementation details.
