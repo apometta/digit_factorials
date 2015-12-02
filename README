@@ -19,4 +19,7 @@ anything higher than this is known to be impossible to achieve with the digit
 factorial sum.  That is why our max is 2,540,160.  As well, due to the note in the 
 problem, we do not include anything below 10.  Thus our range is 10 to 2540610.
 
-See the implementation file for implementation details.
+See the implementation file for implementation details.  Because of the length of 
+the program time, this will take some time, particularly since the language being 
+used is Java.  It should be less than one minute, as per typical Project Euler 
+specifications.

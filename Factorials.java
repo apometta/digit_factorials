@@ -15,7 +15,7 @@ public class Factorials {
     /*For an N digit number X with digits X(1), X(2), ... X(N), return true if
       X(1)! + X(2)! + ... + X(N)! = X
     */
-    public bool digit_check (int number) {
+    public boolean digit_check (int number) {
         int digit_sum = 0;
         int n = number;
         while (number > 0){
