@@ -16,17 +16,15 @@ public class Factorials {
       X(1)! + X(2)! + ... + X(N)! = X
     */
     public boolean digit_check (int number) {
-        int digit_sum = 0;
-        int n = number;
-        while (number > 0){
-            int last_digit = n % 10;
-            n /= 10;
-            digit_sum += factorials[last_digit];
-            //For smaller numbers, the 9!s will quickly outpace the number
-            //itself, so this check can make things faster by ending checks
-            //early.
-            if (digit_sum > number) return false;
+        //I used to to modulo to split the number, but tostring is way faster
+        String digits = Integer.toString(number);
+        int sum = 0;
+        for (int i = 0; i < digits.length(); ++i){
+            int digit = (int)(digits.charAt(i) - '0');
+            sum += factorials[digit];
+            //this check can reduce time for smaller numbers with a lot of 9's
+            if (sum > number) return false;
         }
-        return digit_sum == number;
+        return sum == number;
     }
 }

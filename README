@@ -23,3 +23,9 @@ See the implementation file for implementation details.  Because of the length o
 the program time, this will take some time, particularly since the language being 
 used is Java.  It should be less than one minute, as per typical Project Euler 
 specifications.
+
+This program was created in a Unix environment, using the emacs text editor.  To 
+create the class files, run the program, and remove the class files in one line:
+
+javac *.java && java DigitFactorials && rm *.java
+
